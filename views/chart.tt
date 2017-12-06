@@ -1,0 +1,26 @@
+[% INCLUDE head.tt %]
+
+<table>
+<tr>
+    <td><img src="[% chart %]" /></td>
+    <td nowrap valign=top>
+        <br />
+        <table>
+[% FOREACH i IN order.nsort %]
+        <tr>
+            <td nowrap>[% i.ucfirst %]:</td>
+            <td nowrap>[% average.$i %] / [% discord.$i %]</td>
+        </tr>
+[% END %]
+        <tr>
+            <td nowrap colspan="2">
+                <br />
+                Red: Score (disorder) out of 10 max
+                <br />
+                Green: Discord (dishonesty) out of 5.5 max
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>

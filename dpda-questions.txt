@@ -1,0 +1,196 @@
+paranoid     01 +|I am suspicious and distrustful of others and believe that their motives are malevolant.
+paranoid     01 -|I am trusting of others generally believe people's motives to be good.
+paranoid     01 +|At most times since early adulthood, I have felt suspicious of the motives of those around me.
+paranoid     01 -|Most of the time since early adulthood, I have felt rather trusting of the motives of people.
+paranoid     02 +|I suspect that people are exploiting, harming, or deceiving me.
+paranoid     02 -|I don't generally feel as if people are harming, deceiving, or taking advantage of me.
+paranoid     03 +|I am preoccupied with doubts about the loyalty or trustworthiness of friends or associates.
+paranoid     03 -|I am rarely bothered by doubts about the trustworthiness or loyalty of friends and associates.
+paranoid     04 +|I am reluctant to confide in others because they might use information against me.
+paranoid     04 -|I find it easy to confide in others and rarely suspect they will use what I say against me.
+paranoid     05 +|I notice hidden insults and threatening meanings into remarks or events that others do not notice.
+paranoid     05 -|I rarely see threatening meanings or hidden insults in remarks or events that appear benign.
+paranoid     06 +|Most of the time people don't deserve to be forgiven for insults, slights, or injuries against me.
+paranoid     06 -|I find it relatively easy to forgive people for insults, injuries, or slights against me.
+paranoid     07 +|I find it easy to spot attacks on my character or reputation that are not appearent to others.
+paranoid     07 -|I don't often perceive attacks on my character or reputation that others don't notice as well.
+paranoid     07 +|It is best to react angrily or counterattack when people put me in that situation.
+paranoid     07 -|I am not quick to react angrily or counterattack when put in a negative or confrontational situation.
+paranoid     08 +|I have recurrent suspicions that my spouse or sexual partner is cheating on me.
+paranoid     08 -|I am rarely suspicious about my spouse or sexual partner cheating on me.
+schizoid     01 +|I consider myself detatched from most social situations as a general rule.
+schizoid     01 -|I am quite a social person and find enjoyment through interacting with others.
+schizoid     01 +|Since early adulthood or before, I am do not feel much emotion in most social situations.
+schizoid     01 -|Since early adulthood and before, I feel a broad range of emotions in most social situations.
+schizoid     02 +|I neither desire nor enjoy close relationships with people, even my family.
+schizoid     02 -|I enjoy and desire to have relationships with people and/or my family.
+schizoid     03 +|I almost always choose solitary activities.
+schizoid     03 -|I find enjoyment in being around people.
+schizoid     04 +|I have little, if any, interest in having sexual experiences with another person.
+schizoid     04 -|I find interest in having sexual experiences with another person.
+schizoid     05 +|I actually take pleasure in few, if any, activities in life.
+schizoid     05 -|There are quite a few experiences in life that bring me pleasure.
+schizoid     06 +|I don't really have close friends or confidants other than immediate relatives.
+schizoid     06 -|I have friends and confidants outside of my immediate family.
+schizoid     07 +|I feel mostly indifferent to criticism or praise from others.
+schizoid     07 -|I am affected emotionally by praise or criticism from others.
+schizoid     08 +|I feel emotionally flat, and am generally perceived as a detatched type of person.
+schizoid     08 -|I have emotional ups and downs and feel a wide range of emotions at different times.
+schizotypal  01 +|I generally find being social to be uncomfortable and don't much care for relationships.
+schizotypal  01 -|I am generally comfortable socially and feel a need for relationships in my life.
+schizotypal  01 +|Since early adulthood, I have had beliefs and behaviors that most people find quite odd.
+schizotypal  01 -|Most people seem to accept the majority of my beliefs and habits as faily normal.
+schizotypal  02 +|Though others don't notice it, most of what happens in the world relates directly to me.
+schizotypal  02 -|I think that even though events in the world effect me, they do not always relate to me.
+schizotypal  03 +|I have noticed that I have special magical powers or insights that others do not possess.
+schizotypal  03 -|I am pretty sure that I do not possess psychic, clarvoyant, or magical abilities.
+schizotypal  04 +|Sometimes I see visions or see my body in ways that other people cannot see.
+schizotypal  04 -|I rarely have visions or see my body in ways that other people do not also see.
+schizotypal  05 +|Other people seem to categorize my thinking or speech as abnormal or vague.
+schizotypal  05 -|Most people seem to see my thinking and speech as fairly normal.
+schizotypal  06 +|I often find myself having thoughts which are suspicious of others or of conspiracies.
+schizotypal  06 -|I don't notice any more suspicious or conspiracy thoughts in myself than in other people.
+schizotypal  07 +|People often think my emotional reactions to things are strange or reserved.
+schizotypal  07 -|Most people would characterize my emotional reactions to things as fairly normal and open.
+schizotypal  08 +|People often seem to find my behavior or appearance to be eccentric or peculiar.
+schizotypal  08 -|Most people would not call my behavior or appearance eccentric or peculiar.
+schizotypal  09 +|I don't really have anybody that I would call a close friend or confidant outside my family.   
+schizotypal  09 -|I have a number of close friends and confidants outside of my immediate family.
+schizotypal  10 +|Even after getting familiar with people, I still have social anxiety or worry about criticism.   
+schizotypal  10 -|Once I get to know people, I am rarely anxious around them or worry about their criticism.
+antisocial   01 +|Since adolescence, I have not really cared much about the rights and welfare of most people.
+antisocial   01 -|I hold the rights and feelings of other people to be very important.
+antisocial   02 +|I don't think it's very important to follow social rules and laws.
+antisocial   02 -|In general, I respect most social rules and try to follow the law.
+antisocial   02 +|I have often done things which are against the law and breaking the law doesn't bother me.
+antisocial   02 -|I do not have much of a history of breaking laws that would harm other people.
+antisocial   03 +|It is often necessary to lie, use aliases, or cheat people if I need to get something I want.
+antisocial   03 -|I usually don't want something bad enough to lie, cheat, or use aliases enough to get it.
+antisocial   04 +|I often act on impulses rather than trying to plan things out.
+antisocial   04 -|Most of the time I am able to control my impulses and I try to think before I act.
+antisocial   05 +|I find myself getting into a lot of fights or becoming aggressive because people irritate me.    
+antisocial   05 -|I rarely act aggressively or get into fights just because somebody upsets me.
+antisocial   06 +|I don't worry too much about the safety of others; that is their problem.
+antisocial   06 -|I am generally concerned for the safety of others when I am involved.
+antisocial   07 +|People often hound me to be more responsible at work or with my financial arrangements.
+antisocial   07 -|I am generally seen as being trustworthy and responsible by my co-workers and acquaintances.
+antisocial   08 +|If I have to steal or hurt somebody, I generally don't let it bother me.
+antisocial   08 -|It would bother me a lot if I had to hurt somebody or steal something.
+antisocial   08 +|When I end up hurting somebody, I can usually think of a pretty good reason for it afterwards.
+antisocial   08 -|If somebody ends up getting hurt because of me, I feel bad and find it hard to rationalize.
+borderline   01 +|Most of the time, my relationships with others are unpredicatable and hard to hold together.   
+borderline   01 -|Generally, I find my relationships with others to be quite stable and long lasting.
+borderline   01 +|I feel that my self image and emotions can often change abrubtly and impulsively.
+borderline   01 -|Most people think I am pretty conisitent from one day to the next about how I feel and who I am.
+borderline   02 +|The thought that I may be abandoned by others frightens me so much I may feel frantic.
+borderline   02 -|Though I don't like being abandoned by others, the thought doesn't particularly terrify me.   
+borderline   03 +|Most of my relationships are intense and I may feel like the person is perfect one day and a real pain the next.
+borderline   03 -|My opinion of people that I have relationships with does not generally change too radically over time.
+borderline   04 +|I often find it difficult to keep clear just who I am and what I want in life.
+borderline   04 -|I have a pretty solid idea from day to day of what kind of a person I am and what I want in life.
+borderline   05 +|People often think that I am impulsive about spending, sex, drugs, eating, or driving.
+borderline   05 -|I have not had too much of a problem controlling my spending, sex life, drug use, or driving.
+borderline   05 +|I have at times hurt myself or put myself at risk by reckless drug use, sex, driving, or spending.   
+borderline   05 -|I have never really put myself at risk by reckless drug/alcohol use, sex, driving, or spending.  
+borderline   06 +|I have on more than one occassion threatened or attempted suicide, or intentionally hurt myself.
+borderline   06 -|I am not one to threaten or attempt suicide or to hurt my body intentionally.
+borderline   07 +|I typically have pretty heavy mood swings or anxiety lasting hours or days.
+borderline   07 -|People who know me would probably not characterize me as having drastic mood swings.
+borderline   08 +|I feel empty most of the time.
+borderline   08 -|Emptiness is not something I feel in general.
+borderline   09 +|People often accuse me of having a violent or uncontrollable temper.
+borderline   09 -|People I know would say that my temper is fairly controlled and not too unpredictable.
+borderline   10 +|I have often felt "outside of myself" or had fleeting unrealistic fears brought about by stress.   
+borderline   10 -|I generally feel pretty much in control and am not perceived to be unrealistically suspicious.
+histrionic   01 +|People often think of me as over-emotional or wanting of attention.
+histrionic   01 -|Most people I know would not say that I am overly emotional or attention seeking.
+histrionic   02 +|I often become uncomfortable in social situations when I am not the center of attention.
+histrionic   02 -|In social situations, I do not mind not being the center of attention.
+histrionic   03 +|I often attempt to sexually seduce or provoke people to get or keep their attention.
+histrionic   03 -|I do not try to provoke people or sexually seduce people just to get or keep their attention.
+histrionic   04 +|I find that my emotions rapidly shift from one to another.
+histrionic   04 -|Most people would characterize me as a person who does not shift rapidly from emotion to emotion.
+histrionic   05 +|I consistently choose how I dress in order to draw attention to myself and be noticed.
+histrionic   05 -|I rarely think about drawing attention to myself when choosing what to wear.
+histrionic   06 +|Many people would characterize the way that I talk as impressionistic and lacking in detail.
+histrionic   06 -|I speak fairly concretely and in enough detail so that people know what I mean.
+histrionic   07 +|Many people would think of me as theatrical, dramatic, and exaggerated in my expressions.
+histrionic   07 -|Most people would not characterize my expressiveness as theatrical, exaggerated, or dramatic.
+histrionic   08 +|I find that I am easily influenced by other people or the circumstances in which I find myself.
+histrionic   08 -|Most people would not say that I am gullible or "blow with the wind".
+histrionic   09 +|Most of my acquaintances and colleagues would consider me a dear friend.
+histrionic   09 -|It would be hard for me to believe that somebody I had just met considered me a close friend.
+narcissistic 01 +|Many people just don't seem to notice the historical importance of what I do and say.
+narcissistic 01 -|People in general seem to agree with me regarding the importance of what I do and say.
+narcissistic 02 +|It is more important to me that my accomplishments be recognized by others than that I appreciate their point of view.
+narcissistic 02 -|It is not too distressing to me if somebody fails to recognize what a succesful person I am.
+narcissistic 03 +|I possess unlimited power, success, brilliance, or beauty.
+narcissistic 03 -|Though I may be powerful, wise, or beautiful, I think that these qualities are limited for me just like for everybody else.
+narcissistic 04 +|I am special and unique and can only be understood by, or associate with, other special people.
+narcissistic 04 -|I may be special in some ways but I am really only human like everybody else.
+narcissistic 05 +|It always bothers me that people do not give me the admiration that my talents deserve.
+narcissistic 05 -|I don't feel too strong a need to be admired by everybody all the time.
+narcissistic 06 +|I am entitled to special treatment for who I am although others often fail to recognize this.
+narcissistic 06 -|I don't really think I am entitled to any special treatment above most other people.
+narcissistic 07 +|I am only interested in people who serve some purpose for me or can be beneficial to me.
+narcissistic 07 -|I do not make friends solely on what benefits another person has to offer me.
+narcissistic 08 +|Bothering myself with how other people feel or think is too much of a hassle for me.
+narcissistic 08 -|It is important to me how things affect other people and what they think.
+narcissistic 09 +|I know that other people are very envious of me.
+narcissistic 09 -|I don't often consider people to be very envious of me.
+narcissistic 09 +|I often wish I could have what some people around me have.
+narcissistic 09 -|I do not often find myself to be envious of others around me.
+narcissistic 10 +|Many people may think that I am an arrogant person.
+narcissistic 10 -|Most people do not think of me as an arrogant or haughty person.
+avoidant     01 +|Since early childhood, feelings of inadequacy or fear of negative social situations have caused me to become socially isolated or inhibited.
+avoidant     01 -|I don't have many feelings of inadequacy socially and tend to have a pretty good social life.
+avoidant     02 +|If I feel that a job or activity might subject me to too many people, criticism, or rejection, I will avoid it.
+avoidant     02 -|Fear of rejection, criticism, or social situations does not seem to interfere with my career choices.
+avoidant     03 +|I am usually unwilling to get involved with people unless I know they will like me.
+avoidant     03 -|I am not one to let my fear of not being liked interfere with my social life.
+avoidant     04 +|My fear of being shamed or ridiculed usually keeps me from getting too intimate with people.
+avoidant     04 -|I don't have much of a problem getting intimate with somebody even though there is always a risk of being shamed or ridiculed.
+avoidant     05 +|I worry quite often about being criticized or rejected in social situations.
+avoidant     05 -|I don't worry too often about being rejected or criticized in social situations.
+avoidant     06 +|I feel inhibited in new relationships because of feelings of inadequacy.
+avoidant     06 -|I rarely feel inhibited in new relationships because of feelings of inadequacy.
+avoidant     07 +|I consider myself socially awkward, personally unappealing, or inferior to others.
+avoidant     07 -|I rarely feel personally unappealing, inferior to others, or socially inept.
+avoidant     08 +|I am usually reluctant to take personal risks or engage in new activities because they may prove embarrassing.
+avoidant     08 -|I am not bothered much by taking personal risks or engaging in a new activity even though it may prove embarrassing.
+dependent    01 +|My fear of separation and need to be taken care of often lead me to be submissive or clingy.
+dependent    01 -|I am not willing to be submissive or clingy just to avoid separation or in order to be taken care of.
+dependent    02 +|I would rather not make most daily decisions some reassurance and advice from others.
+dependent    02 -|I find it easy to make most decisions without much reassurance or advice from others.
+dependent    03 +|I feel most comfortable when others take responsibility for the things in my life.
+dependent    03 -|I would rather assume responsibility for most things in life than let others do so.
+dependent    04 +|I mostly find it difficult to disagree with others if it means losing their support or approval.
+dependent    04 -|Losing the support or approval of others does not keep me from disagreeing with them.
+dependent    05 +|Lack of self confidence makes it difficult for me to initiate projects on my own.
+dependent    05 -|I don't often find it difficult to inititate projects on my own because of lack of self confidence.
+dependent    06 +|I will often volunteer to do unpleasent things if it means getting nurturing and support from others.
+dependent    06 -|I will not do something unpleasent just to get nurturing and support from others.
+dependent    07 +|I often feel uncomfortable or helpless when I am alone because I may be unable to care for myself.
+dependent    07 -|I don't feel uncomfortable or helpless when I am alone and know that I can care for myself.
+dependent    08 +|When a close relationship ends, it is very important for me to seek another one as a source of care and support.
+dependent    08 -|When a close relationship ends, I do not tend to worry too much about finding another source of care and support.
+dependent    09 +|I have great fears of being left to take care of myself.
+dependent    09 -|The thought of being left alone to take care of myself is not all that frightening to me.
+OC           01 +|It is more important to be orderly, perfect, and in mental and personal control than it is to be flexible, open, and efficient.
+OC           01 -|It is more important to be flexible, open, and efficient than to be orderly, perfect, or in mental or personal control.
+OC           02 +|I often lose an activity to thoughts of details, rules, lists, order, organization, or schedules.
+OC           02 -|I focus more on the activity than on details, rules, lists, order, organization, or schedules.
+OC           03 +|Most often, trying to get something done just right gets in the way of my getting it completed.
+OC           03 -|I prefer to get things done even if imperfectly rather than not get things done trying to perfect them.
+OC           04 +|Even if I have enough money, I am much more devoted to work and productivity than to leisure activities and friendships.
+OC           04 -|Work and productivity may be important, but so is leisure time and frienships.
+OC           05 +|Even though my culture or religion may not say so, what is right is right and I am steadfast in my values.
+OC           05 -|I can allow a certain amount of flexibility in my ethics and values according to the situation.
+OC           06 +|I keep worn out or worthless items even though they may have no sentimental value.
+OC           06 -|If I keep worn out or worthless items, they ought to have some kind of sentimental value.
+OC           07 +|I will not deligate tasks or work to others unless they do it my way.
+OC           07 -|I don't seem to have a problem deligating tasks or work to others even though they may do things somewhat different than I would.
+OC           08 +|It is much more important to save money for future catastrophies than to spend it today.
+OC           08 -|Though it is important to save money for the future, it is also important to enjoy it right now.
+OC           09 +|People often think of me as rigid or stubborn.
+OC           09 -|Most people would not say that I am overly rigid or stubborn.

@@ -1,0 +1,48 @@
+[% INCLUDE head.tt %]
+
+<TABLE>
+<TR>
+    <TD VALIGN=TOP><IMG ALIGN="left" SRC="/images/sample-chart.gif"></TD>
+    <TD NOWRAP VALIGN=TOP>
+        <BR>
+        <TABLE>
+        <TR>
+            <TD NOWRAP>Paranoid:</TD><TD NOWRAP>4.15 / 2.33</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Schizoid:</TD><TD NOWRAP>6.00 / 2.47</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Schizotypal:</TD><TD NOWRAP>4.59 / 1.52</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Antisocial:</TD><TD NOWRAP>2.25 / 2.11</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Borderline:</TD><TD NOWRAP>5.75 / 2.04</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Histrionic:</TD><TD NOWRAP>4.11 / 2.72</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Narcissistic:</TD><TD NOWRAP>5.23 / 2.73</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Avoidant:</TD><TD NOWRAP>7.06 / 1.81</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>Dependent:</TD><TD NOWRAP>2.17 / 2.35</TD>
+        </TR>
+        <TR>
+            <TD NOWRAP>OC:</TD><TD NOWRAP>5.17 / 2.59</TD>
+        </TR>
+        <TR>
+            <td NOWRAP colspan="2">
+                <br />
+                Red: Score (disorder) out of 10 max<BR>Green: Discord (dishonesty) out of 5.5 max
+            </td>
+        </TR>
+        </TABLE>
+    </TD>
+</TR>
+</TABLE>
