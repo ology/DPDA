@@ -3,7 +3,7 @@ body {
 margin: 0;
 margin-bottom: 25px;
 padding: 0;
-background-color: #EBF4FA;
+background-color: #E5E4E2;
 //background-image: url("/images/background.png");
 //background-repeat: no-repeat;
 //background-position: top left;
@@ -26,7 +26,7 @@ text-decoration: none;
 }
 
 #page {
-background-color: #EBF4FA;
+background-color: #E5E4E2;
 width: 750px;
 margin: auto;
 margin-left: auto;
