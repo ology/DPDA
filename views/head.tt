@@ -1,9 +1,10 @@
-<h1>Dimensional Personality Disorder Assessment</h1>
-<p>
+<h1 style="float:left;">Dimensional Personality Disorder Assessment</h1>
+<div style="float:right; padding: 10px;">
 <a href="/overview">Overview</a>
 <br>
 <a href="/sample">Sample Results</a>
 <br>
 <a href="/question">Start Quiz</a>
-</p>
+</div>
+<div style="clear:both;"></div>
 <hr>
