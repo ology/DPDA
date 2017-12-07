@@ -32,5 +32,3 @@ for my $i ( 0 .. @quiz - 1 ) {
         }, "submit form for $meta[2] question $question_num"
     );
 }
-
-done_testing();
