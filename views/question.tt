@@ -2,6 +2,8 @@
 
 Progress: [% progress %] / [% total_questions %]
 
+<div id="question_num" style="display: none;">[% question_num %]</div>
+
 <p><b>"[% question_text %]"</b></p>
 
 <form method="post" action="/quiz">
