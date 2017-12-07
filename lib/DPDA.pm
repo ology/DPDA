@@ -28,20 +28,25 @@ Method: get
 get '/question' => sub {
     my $progress = query_parameters->get('progress') || 1;
 
-    my $history;
+    # Handle the history
+    my ( $history, %history );
+    # Clear the history if on the first question
     if ( $progress == 1 ) {
         cookie( history => '' )
     }
     else {
+        # Turn the history into an arrayref and a hash
         $history = cookie('history');
-        $history = [ split /,/, $history ]
-            if $history;
+        if ( $history ) {
+            $history = [ split /,/, $history ];
+            %history = map { split /\|/, $_ } @$history;
+        }
     }
-    my %history = map { split /\|/, $_ } @$history
-        if $history;
 
+    # Load the quiz questions
     my @quiz = _load_quiz();
 
+    # Get a random question that has not been seen
     my ( $question_num, $question_text ) = _get_question( \@quiz, \%history );
 
     template 'question' => {
@@ -66,16 +71,20 @@ post '/quiz' => sub {
     my $answer   = body_parameters->get('answer');
     my $progress = body_parameters->get('progress');
 
+    # Handle the history
     my $history = cookie('history');
     my %history;
     if ( $history || $answer ) {
         @history{ split /,/, $history } = undef;
+        # Add the current response to the history
         $history{ "$question|$answer" } = undef;
         cookie( history => join( ',', keys %history ) );
     }
 
+    # Increment the progress
     $progress++;
 
+    # Load the quiz questions
     my @quiz = _load_quiz();
 
     if ( $progress > @quiz ) {
@@ -95,13 +104,16 @@ Method: get
 =cut
 
 get '/chart' => sub {
+    # Handle the history
     my $history = cookie('history');
     my %history;
     if ( $history ) {
+        # Turn the history into an arrayref and a hash
         $history = [ split /,/, $history ];
         %history = map { split /\|/, $_ } @$history;
     }
 
+    # Load the quiz questions
     my @quiz = _load_quiz();
 
     my @response = (
@@ -113,10 +125,9 @@ get '/chart' => sub {
       '','','','',''
     );
 
+    # Perform the magical calculations...
     my ( %number, %order, %results, %average, %discord, $category );
-
     _calc_results( \@quiz, \@response, \%history, \%results, \%discord );
-
     _order_category( \%order, \@quiz );
 
     # Calculate the number of questions per category
@@ -132,6 +143,7 @@ get '/chart' => sub {
     %discord = map { $_ => ( @response * $discord{$_} / ( $number{$_} / 2 ) ) / ( @response - 1 ) } keys %discord;
     %discord = map { $_ => sprintf( '%.2f', $discord{$_} ) } keys %discord;
 
+    # Render a results chart as an actual file
     my $chart = _draw_chart( scalar @response, \%order, \%average, \%discord );
 
     template 'chart' => {
@@ -152,13 +164,18 @@ get '/sample' => sub {
 
 sub _load_quiz {
     my @quiz;
+
     my $file = 'dpda-questions.txt';
+
     open my $fh, '<', $file or die "Can't read $file: $!";
+
     while ( my $line = <$fh> ) {
         chomp $line;
         push @quiz, $line;
     }
+
     close $fh;
+
     return @quiz;
 }
 
@@ -168,44 +185,50 @@ sub _get_question {
     die 'History equal to number of questions'
         if keys(%$history) >= @$questions;
 
+    # Get the initial question
     my $question_num = int rand @$questions;
     my $question     = $questions->[$question_num];
 
+    # Get a new question if the initial has already been seen
     while ( exists $history->{$question_num} ) {
         $question_num = int rand @$questions;
         $question     = $questions->[$question_num];
     }
 
+    # Get the actual question text from the line
     my $question_text = [ split /\|/, $question ]->[1];
 
     return $question_num, $question_text;
 }
 
 sub _calc_results {
-  my ( $quiz, $response, $history, $results, $discord ) = @_;
+    my ( $quiz, $response, $history, $results, $discord ) = @_;
 
-  my ( $category, $inv, $next );
+    my ( $category, $inv, $next );
 
-  for my $key (keys %$history) {
+    # Compute the results and discord from the history
+    for my $key (keys %$history) {
         my $val = $history->{$key};
 
+        # Why?
         if ( ( $key / 2 ) =~ /\./ ) {
             # Calculate with the question parameters
             ( $category, undef, $inv ) = split /\s+/, ( split /\|/, $quiz->[ $key - 1 ] )[0];
 
             $val = _invert_neg( scalar @$response, $inv, $val );
-            #print br('Q#, Cat, Inv, Val:', $key, $category, $inv, $val), "\n";
 
+            # Sum the category value
             $results->{$category} += $val;
 
             # ..And again for the next (discord) question
             $next = $history->{$key + 1};
             $inv  = ( split /\s+/, ( split /\|/, $quiz->[$key] )[0] )[-1];
             $next = _invert_neg( scalar @$response, $inv, $next );
-            #print br('Q#, Cat, Inv, Val:', $key + 1, $category, $inv, $next), "\n";
 
+            # Sum the category value
             $results->{$category} += $next;
 
+            # Sum the discord category value
             $discord->{$category} += abs( $val - $next );
         }
     }
@@ -213,7 +236,7 @@ sub _calc_results {
 
 sub _invert_neg {
     my ( $size, $flag, $val ) = @_;
-
+    # Why?
     $flag eq '-' ? return $size - ($val - 1)
                  : return $val;
 }
@@ -223,13 +246,12 @@ sub _order_category {
 
     my $next = 1;
 
-    for my $category (@$quiz) {
+    for my $category ( @$quiz ) {
         $category =~ s/^(\w+).*$/$1/;
         chomp $category;
 
         $order->{$category} = $next++
             unless exists $order->{$category};
-        #print 'Category, Order: ', "'$category'", ' => ', $order->{$category}, br, "\n";
     }
 }
 
@@ -257,6 +279,7 @@ sub _draw_chart {
 
     my $gd = $graph->plot(\@data) or die $graph->error;
 
+    # Save the chart to an actual file
     my $chart = 'public/charts/dpda-'. time() .'.png';
     open ( my $fh, '>', $chart ) or die "Can't write to $chart: $!";
     binmode $fh;
