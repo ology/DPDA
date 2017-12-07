@@ -17,6 +17,16 @@ A C<DPDA> is a web quiz for the assessment of personality disorders.
 
 =head1 ROUTES
 
+=head2 /
+
+Redirect to C</overview>.
+
+=cut
+
+get '/' => sub {
+    redirect '/overview';
+};
+
 =head2 /question
 
 Question page.
