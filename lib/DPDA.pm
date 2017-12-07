@@ -195,15 +195,13 @@ sub _get_question {
     die 'History equal to number of questions'
         if keys(%$history) >= @$questions;
 
-    # Get the initial question
-    my $question_num = int rand @$questions;
-    my $question     = $questions->[$question_num];
-
-    # Get a new question if the initial has already been seen
-    while ( exists $history->{$question_num} ) {
+    # Get a question that has not been seen
+    my ( $question_num, $question );
+    do {
         $question_num = int rand @$questions;
         $question     = $questions->[$question_num];
     }
+    until not exists $history->{$question_num};
 
     # Get the actual question text from the line
     my $question_text = [ split /\|/, $question ]->[1];
