@@ -40,7 +40,7 @@ if ( $mech->status eq '200' ) {
     is $mech->base, "$base/chart", '/chart';
 }
 else {
-    print "Can't connect to $url\n";
+    print "Can't connect to $base\n";
 }
 
 done_testing();
