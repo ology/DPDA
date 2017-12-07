@@ -175,7 +175,7 @@ get '/sample' => sub {
 sub _load_quiz {
     my @quiz;
 
-    my $file = 'dpda-questions.txt';
+    my $file = 'public/dpda-questions.txt';
 
     open my $fh, '<', $file or die "Can't read $file: $!";
 
