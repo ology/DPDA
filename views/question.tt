@@ -5,7 +5,7 @@ Progress: [% progress %] / [% total_questions %]
 <p><b>"[% question_text %]"</b></p>
 
 <form method="post" action="/quiz">
-    <input type="hidden" name="question" value="[% question_num %]">
+    <input type="hidden" name="question" value="[% question_num %]" id="question_num">
     <input type="hidden" name="progress" value="[% progress %]">
 
 [% FOREACH i IN history %]
