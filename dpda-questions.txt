@@ -176,7 +176,7 @@ dependent    08 +|When a close relationship ends, it is very important for me to
 dependent    08 -|When a close relationship ends, I do not tend to worry too much about finding another source of care and support.
 dependent    09 +|I have great fears of being left to take care of myself.
 dependent    09 -|The thought of being left alone to take care of myself is not all that frightening to me.
-OC           01 +|It is more important to be orderly, perfect and in mental and personal control than it is to be flexible, open, and efficient.
+OC           01 +|It is more important to be orderly, perfect and in mental and personal control than it is to be flexible, open and efficient.
 OC           01 -|It is more important to be flexible, open and efficient than to be orderly, perfect or in mental or personal control.
 OC           02 +|I often lose an activity to thoughts of details, rules, lists, order, organization or schedules.
 OC           02 -|I focus more on the activity than on details, rules, lists, order, organization or schedules.
