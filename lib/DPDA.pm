@@ -126,18 +126,12 @@ get '/chart' => sub {
     # Load the quiz questions
     my @quiz = _load_quiz();
 
-    my @response = (
-      'Strongly disagree',
-      'Disagree',
-      'Maybe',
-      'Agree',
-      'Strongly agree',
-      '','','','',''
-    );
+    # Number of possible question responses
+    my $responses = 10;
 
     # Perform the magical calculations...
     my ( %number, %order, %results, %average, %discord, $category );
-    _calc_results( \@quiz, \@response, \%history, \%results, \%discord );
+    _calc_results( \@quiz, $responses, \%history, \%results, \%discord );
     _order_category( \%order, \@quiz );
 
     # Calculate the number of questions per category
@@ -150,11 +144,11 @@ get '/chart' => sub {
     %average = map { $_ => sprintf( '%.2f', $average{$_} ) } keys %average;
 
     # Calculate the average discord between +/- questions
-    %discord = map { $_ => ( @response * $discord{$_} / ( $number{$_} / 2 ) ) / ( @response - 1 ) } keys %discord;
+    %discord = map { $_ => ( $responses * $discord{$_} / ( $number{$_} / 2 ) ) / ( $responses - 1 ) } keys %discord;
     %discord = map { $_ => sprintf( '%.2f', $discord{$_} ) } keys %discord;
 
     # Render a results chart as an actual file
-    my $chart = _draw_chart( scalar @response, \%order, \%average, \%discord );
+    my $chart = _draw_chart( $responses, \%order, \%average, \%discord );
 
     template 'chart' => {
         order   => \%order,
@@ -223,7 +217,7 @@ sub _get_question {
 }
 
 sub _calc_results {
-    my ( $quiz, $response, $history, $results, $discord ) = @_;
+    my ( $quiz, $responses, $history, $results, $discord ) = @_;
 
     my ( $category, $inv, $next );
 
@@ -236,7 +230,7 @@ sub _calc_results {
             # Calculate with the question parameters
             ( $category, undef, $inv ) = split /\s+/, ( split /\|/, $quiz->[ $key - 1 ] )[0];
 
-            $val = _invert_neg( scalar @$response, $inv, $val );
+            $val = _invert_neg( $responses, $inv, $val );
 
             # Sum the category value
             $results->{$category} += $val;
@@ -244,7 +238,7 @@ sub _calc_results {
             # ..And again for the next (discord) question
             $next = $history->{$key + 1};
             $inv  = ( split /\s+/, ( split /\|/, $quiz->[$key] )[0] )[-1];
-            $next = _invert_neg( scalar @$response, $inv, $next );
+            $next = _invert_neg( $responses, $inv, $next );
 
             # Sum the category value
             $results->{$category} += $next;
