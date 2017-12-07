@@ -5,11 +5,11 @@ Progress: [% progress %] / [% total_questions %]
 <p><b>"[% question_text %]"</b></p>
 
 <form method="post" action="/quiz">
-    <input type="hidden" name="question" value="[% question_num %]" id="question_num">
-    <input type="hidden" name="progress" value="[% progress %]">
+    <input type="hidden" name="question" value="[% question_num %]" />
+    <input type="hidden" name="progress" value="[% progress %]" />
 
 [% FOREACH i IN history %]
-    <input type="hidden" name="history" value="[% i %]">
+    <input type="hidden" name="history" value="[% i %]" />
 [% END %]
 
     <table>
@@ -20,12 +20,12 @@ Progress: [% progress %] / [% total_questions %]
     </tr>
     <tr>
 [% FOREACH i IN [ 1 .. 10 ] %]
-        <td align="center"><input type="radio" name="answer" value="[% i %]"><br>[% i %]</td>
+        <td align="center"><input type="radio" name="answer" value="[% i %]" /><br>[% i %]</td>
 [% END %]
     </tr>
     </table>
 
-    <p><input id="submit" type="submit" name="submit" value="Next Question" disabled="disabled"></p>
+    <p><input id="submit" type="submit" name="submit" value="Next Question" disabled="disabled" /></p>
 
 </form>
 
