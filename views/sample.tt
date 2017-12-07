@@ -39,7 +39,9 @@
         <TR>
             <td NOWRAP colspan="2">
                 <br />
-                Red: Score (disorder)<br />Green: Discord (dishonesty)
+                Red: Score (disorder)
+                <br />
+                Green: Discord ("dishonesty", "ambivalence")
             </td>
         </TR>
         </TABLE>
