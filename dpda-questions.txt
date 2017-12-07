@@ -160,7 +160,7 @@ avoidant     08 +|I am usually reluctant to take personal risks or engage in new
 avoidant     08 -|I am not bothered much by taking personal risks or engaging in a new activity even though it may prove embarrassing.
 dependent    01 +|My fear of separation and need to be taken care of often lead me to be submissive or clingy.
 dependent    01 -|I am not willing to be submissive or clingy just to avoid separation or in order to be taken care of.
-dependent    02 +|I would rather not make most daily decisions some reassurance and advice from others.
+dependent    02 +|I would rather not make most daily decisions without some reassurance and advice from others.
 dependent    02 -|I find it easy to make most decisions without much reassurance or advice from others.
 dependent    03 +|I feel most comfortable when others take responsibility for the things in my life.
 dependent    03 -|I would rather assume responsibility for most things in life than let others do so.
