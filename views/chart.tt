@@ -1,16 +1,17 @@
 [% INCLUDE head.tt %]
 
-[% link = {
-    paranoid     = 'https://en.wikipedia.org/wiki/Paranoid_personality_disorder'
-    schizoid     = 'https://en.wikipedia.org/wiki/Schizoid_personality_disorder'
-    schizotypal  = 'https://en.wikipedia.org/wiki/Schizotypal_personality_disorder'
-    antisocial   = 'https://en.wikipedia.org/wiki/Antisocial_personality_disorder'
-    borderline   = 'https://en.wikipedia.org/wiki/Borderline_personality_disorder'
-    histrionic   = 'https://en.wikipedia.org/wiki/Histrionic_personality_disorder'
-    narcissistic = 'https://en.wikipedia.org/wiki/Narcissistic_personality_disorder'
-    avoidant     = 'https://en.wikipedia.org/wiki/Avoidant_personality_disorder'
-    dependent    = 'https://en.wikipedia.org/wiki/Dependent_personality_disorder'
-    OC           = 'https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_personality_disorder'
+[% base = 'https://en.wikipedia.org/wiki/'
+   link = {
+    paranoid     = 'Paranoid_personality_disorder'
+    schizoid     = 'Schizoid_personality_disorder'
+    schizotypal  = 'Schizotypal_personality_disorder'
+    antisocial   = 'Antisocial_personality_disorder'
+    borderline   = 'Borderline_personality_disorder'
+    histrionic   = 'Histrionic_personality_disorder'
+    narcissistic = 'Narcissistic_personality_disorder'
+    avoidant     = 'Avoidant_personality_disorder'
+    dependent    = 'Dependent_personality_disorder'
+    OC           = 'Obsessive%E2%80%93compulsive_personality_disorder'
     }
 %]
 
@@ -22,7 +23,7 @@
         <table>
 [% FOREACH i IN order.nsort %]
         <tr>
-            <td nowrap><a href="[% link.$i %]">[% i.ucfirst %]</a>:</td>
+            <td nowrap><a href="[% base %][% link.$i %]">[% i.ucfirst %]</a>:</td>
             <td nowrap>[% average.$i %] / [% discord.$i %]</td>
         </tr>
 [% END %]
