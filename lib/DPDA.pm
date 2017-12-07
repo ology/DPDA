@@ -225,7 +225,7 @@ sub _calc_results {
     for my $key (keys %$history) {
         my $val = $history->{$key};
 
-        # Why?
+        # Only consider every other history item
         if ( ( $key / 2 ) =~ /\./ ) {
             # Calculate with the question parameters
             ( $category, undef, $inv ) = split /\s+/, ( split /\|/, $quiz->[ $key - 1 ] )[0];
