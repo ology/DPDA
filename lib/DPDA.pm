@@ -252,8 +252,8 @@ sub _calc_results {
 sub _invert_neg {
     my ( $size, $flag, $val ) = @_;
     # Why?
-    $flag eq '-' ? return $size - ($val - 1)
-                 : return $val;
+    $flag eq '-' ? return $val
+                 : return $size - ($val - 1);
 }
 
 sub _order_category {
