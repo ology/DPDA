@@ -236,7 +236,7 @@ sub _calc_results {
             $results->{$category} += $val;
 
             # ..And again for the next (discord) question
-            $next = $history->{$key + 1};
+            $next = $history->{ $key + 1 };
             $inv  = ( split /\s+/, ( split /\|/, $quiz->[$key] )[0] )[-1];
             $next = _invert_neg( $responses, $inv, $next );
 
