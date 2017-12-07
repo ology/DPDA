@@ -20,7 +20,7 @@ paranoid     08 +|I have recurrent suspicions that my spouse or sexual partner i
 paranoid     08 -|I am rarely suspicious about my spouse or sexual partner cheating on me.
 schizoid     01 +|I consider myself detatched from most social situations as a general rule.
 schizoid     01 -|I am quite a social person and find enjoyment through interacting with others.
-schizoid     01 +|Since early adulthood or before, I am do not feel much emotion in most social situations.
+schizoid     01 +|Since early adulthood or before, I do not feel much emotion in most social situations.
 schizoid     01 -|Since early adulthood and before, I feel a broad range of emotions in most social situations.
 schizoid     02 +|I neither desire nor enjoy close relationships with people, even my family.
 schizoid     02 -|I enjoy and desire to have relationships with people and/or my family.
