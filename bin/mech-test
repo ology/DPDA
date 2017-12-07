@@ -17,7 +17,8 @@ close $fh;
 
 my $mech = Test::WWW::Mechanize->new();
 
-my $url = 'http://0.0.0.0:5000/question';
+my $base = 'http://0.0.0.0:5000';
+my $url  = "$base/question";
 
 $mech->get($url);
 
@@ -36,6 +37,8 @@ if ( $mech->status eq '200' ) {
             }, "submit form for $meta[2] question $question_num"
         );
     }
+
+    is $mech->base, "$base/chart", '/chart';
 }
 else {
     print "Can't connect to $url\n";
