@@ -1,0 +1,38 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+use Test::WWW::Mechanize;
+
+# Read-in quiz questions
+my $file = 'public/dpda-questions.txt';
+my @quiz;
+open my $fh, '<', $file or die "Can't read $file: $!";
+while ( my $line = <$fh> ) {
+    chomp $line;
+    push @quiz, $line;
+}
+close $fh;
+
+my $mech = Test::WWW::Mechanize->new();
+
+$mech->get('http://0.0.0.0:5000/question');
+
+for my $i ( 0 .. @quiz - 1 ) {
+    my $question_num = $mech->scrape_text_by_id('question_num');
+
+    my @question = split /\|/, $quiz[$question_num];
+    use Test::More;diag(__PACKAGE__,' L',__LINE__,'. MARK: ',$question_num,"\n");
+    use Data::Dumper;use Test::More;diag(__PACKAGE__,' L',__LINE__,'. MARK: ',Dumper\@question);
+    my @meta = split /\s+/, $question[0];
+
+    $mech->submit_form_ok( {
+            form_number => 1,
+            fields      => {
+                answer => $meta[2] eq '+' ? 1 : 10,
+            },
+        }, 'submit form'
+    );
+}
+
+done_testing();
