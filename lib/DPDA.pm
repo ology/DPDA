@@ -164,9 +164,22 @@ get '/chart' => sub {
     };
 };
 
+=head2 /overview
+
+Overview page.
+
+=cut
+
 get '/overview' => sub {
     template 'overview' => {};
 };
+
+=head2 /sample
+
+Sample results page.
+
+=cut
+
 
 get '/sample' => sub {
     template 'sample' => {};
