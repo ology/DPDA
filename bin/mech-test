@@ -18,9 +18,8 @@ close $fh;
 my $mech = Test::WWW::Mechanize->new();
 
 my $base = 'http://0.0.0.0:5000';
-my $url  = "$base/question";
 
-$mech->get($url);
+$mech->get("$base/question");
 
 if ( $mech->status eq '200' ) {
     for my $i ( 0 .. @quiz - 1 ) {
