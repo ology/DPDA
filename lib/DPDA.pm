@@ -165,16 +165,18 @@ sub _load_quiz {
 sub _get_question {
     my ( $questions, $history ) = @_;
 
+    die 'History equal to number of questions'
+        if keys(%$history) >= @$questions;
+
     my $question_num = int rand @$questions;
-    my $question = $questions->[$question_num];
-    do {
+    my $question     = $questions->[$question_num];
+
+    while ( exists $history->{$question_num} ) {
         $question_num = int rand @$questions;
-        $question = $questions->[$question_num];
-    } if exists $history->{$question};
+        $question     = $questions->[$question_num];
+    }
 
     my $question_text = [ split /\|/, $question ]->[1];
-
-    $question_num++;
 
     return $question_num, $question_text;
 }
