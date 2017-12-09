@@ -5,6 +5,16 @@ use warnings;
 use Test::More;
 use Test::WWW::Mechanize;
 
+my $disordered = 1; # 0 for "no disorder"
+
+my ( $plus, $minus );
+if ( $disordered ) {
+    ( $plus, $minus ) = ( 10, 1 );
+}
+else {
+    ( $plus, $minus ) = ( 1, 10 );
+}
+
 # Read-in quiz questions
 my $file = 'public/dpda-questions.txt';
 my @quiz;
@@ -31,7 +41,7 @@ if ( $mech->status eq '200' ) {
         $mech->submit_form_ok( {
                 form_number => 1,
                 fields      => {
-                    answer => $meta[2] eq '+' ? 1 : 10,
+                    answer => $meta[2] eq '+' ? $plus : $minus,
                 },
             }, "submit form for $meta[2] question $question_num"
         );
