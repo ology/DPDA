@@ -1,4 +1,7 @@
 #!/usr/bin/env perl
+
+# Test the extrema.
+
 use strict;
 use warnings;
 
