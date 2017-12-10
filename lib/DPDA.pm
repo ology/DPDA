@@ -223,37 +223,37 @@ sub _calc_results {
 
     # Compute the results and discord from the history
     for my $key (keys %$history) {
-        my $val = $history->{$key};
-
         # Only consider every other history item
-        if ( ( $key / 2 ) =~ /\./ ) {
-            # Calculate with the question parameters
-            ( $category, undef, $inv ) = split /\s+/, ( split /\|/, $quiz->[ $key - 1 ] )[0];
+        next unless $key % 2;
 
-            $val = _invert_neg( $responses, $inv, $val );
+        my $val = $history->{ $key - 1 };
 
-            # Sum the category value
-            $results->{$category} += $val;
+        # Calculate with the question parameters
+        ( $category, undef, $inv ) = split /\s+/, ( split /\|/, $quiz->[ $key - 1 ] )[0];
 
-            # ..And again for the next (discord) question
-            $next = $history->{ $key + 1 };
-            $inv  = ( split /\s+/, ( split /\|/, $quiz->[$key] )[0] )[-1];
-            $next = _invert_neg( $responses, $inv, $next );
+        $val = _invert_neg( $responses, $inv, $val );
 
-            # Sum the category value
-            $results->{$category} += $next;
+        # Sum the category value
+        $results->{$category} += $val;
 
-            # Sum the discord category value
-            $discord->{$category} += abs( $val - $next );
-        }
+        # ..And again for the next (discord) question
+        $next = $history->{$key};
+        $inv  = ( split /\s+/, ( split /\|/, $quiz->[$key] )[0] )[-1];
+        $next = _invert_neg( $responses, $inv, $next );
+
+        # Sum the category value
+        $results->{$category} += $next;
+
+        # Sum the discord category value
+        $discord->{$category} += abs( $val - $next );
     }
 }
 
 sub _invert_neg {
     my ( $size, $flag, $val ) = @_;
     # Why?
-    $flag eq '-' ? return $val
-                 : return $size - ($val - 1);
+    $flag eq '-' ? return $size - ($val - 1)
+                 : return $val;
 }
 
 sub _order_category {
