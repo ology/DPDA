@@ -41,12 +41,7 @@ if ( $mech->status eq '200' ) {
         my $inv = ( split /\s+/, ( split /\|/, $quiz[$question_num] )[0] )[-1];
 
         $mech->submit_form_ok(
-            {
-                form_number => 1,
-                fields      => {
-                    answer => $inv eq '+' ? $plus : $minus,
-                },
-            },
+            { fields => { answer => $inv eq '+' ? $plus : $minus } },
             "submit form for $inv question $question_num"
         );
     }
