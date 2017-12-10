@@ -41,12 +41,14 @@ if ( $mech->status eq '200' ) {
         my @question = split /\|/, $quiz[$question_num];
         my @meta     = split /\s+/, $question[0];
 
-        $mech->submit_form_ok( {
+        $mech->submit_form_ok(
+            {
                 form_number => 1,
                 fields      => {
                     answer => $meta[2] eq '+' ? $plus : $minus,
                 },
-            }, "submit form for $meta[2] question $question_num"
+            },
+            "submit form for $meta[2] question $question_num"
         );
     }
 
