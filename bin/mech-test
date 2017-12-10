@@ -50,7 +50,7 @@ if ( $mech->status eq '200' ) {
 
         $mech->submit_form_ok(
             { fields => { answer => $answer } },
-            , "submit form for $inv question $question_num = $answer"
+            "submit form for $inv question $question_num = $answer"
         );
     }
 
