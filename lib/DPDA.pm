@@ -199,18 +199,19 @@ sub _load_quiz {
 sub _get_question {
     my ( $questions, $history ) = @_;
 
+    # This should never happen:
     die 'History equal to number of questions'
         if keys(%$history) >= @$questions;
 
     # Get a question that has not been seen
-    my ( $question_num, $question );
+    my $question_num;
     do {
         $question_num = int rand @$questions;
-        $question     = $questions->[$question_num];
     }
     until not exists $history->{$question_num};
 
-    # Get the actual question text from the line
+    # Get the actual question and text
+    my $question      = $questions->[$question_num];
     my $question_text = [ split /\|/, $question ]->[1];
 
     return $question_num, $question_text;
