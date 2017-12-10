@@ -208,7 +208,7 @@ sub _get_question {
     do {
         $question_num = int rand @$questions;
     }
-    until not exists $history->{$question_num};
+    while exists $history->{$question_num};
 
     # Get the actual question and text
     my $question      = $questions->[$question_num];
