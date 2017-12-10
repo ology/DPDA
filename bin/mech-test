@@ -8,11 +8,9 @@ use warnings;
 use Test::More;
 use Test::WWW::Mechanize;
 
-my $base = 'http://0.0.0.0:5000';
-
 my $disordered = -1; # 0 for "no disorder", -1 for random response
-
-my $max = 10;
+my $base       = 'http://0.0.0.0:5000';
+my $max        = 10;
 
 my ( $plus, $minus );
 if ( $disordered ) {
