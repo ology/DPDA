@@ -12,12 +12,14 @@ my $base = 'http://0.0.0.0:5000';
 
 my $disordered = -1; # 0 for "no disorder", -1 for random response
 
+my $max = 10;
+
 my ( $plus, $minus );
 if ( $disordered ) {
-    ( $plus, $minus ) = ( 10, 1 );
+    ( $plus, $minus ) = ( $max, 1 );
 }
 else {
-    ( $plus, $minus ) = ( 1, 10 );
+    ( $plus, $minus ) = ( 1, $max );
 }
 
 # Read-in quiz questions
@@ -42,7 +44,7 @@ if ( $mech->status eq '200' ) {
 
         my $answer;
         if ( $disordered == -1 ) {
-            $answer = 1 + int rand 10;
+            $answer = 1 + int rand $max;
         }
         else {
             $answer = $inv eq '+' ? $plus : $minus;
