@@ -39,16 +39,16 @@ if ( $mech->status eq '200' ) {
         my $question_num = $mech->scrape_text_by_id('question_num');
 
         my @question = split /\|/, $quiz[$question_num];
-        my @meta     = split /\s+/, $question[0];
+        my $inv      = ( split /\s+/, $question[0] )[2];
 
         $mech->submit_form_ok(
             {
                 form_number => 1,
                 fields      => {
-                    answer => $meta[2] eq '+' ? $plus : $minus,
+                    answer => $inv eq '+' ? $plus : $minus,
                 },
             },
-            "submit form for $meta[2] question $question_num"
+            "submit form for $inv question $question_num"
         );
     }
 
