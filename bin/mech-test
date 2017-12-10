@@ -10,7 +10,7 @@ use Test::WWW::Mechanize;
 
 my $base = 'http://0.0.0.0:5000';
 
-my $disordered = 1; # 0 for "no disorder"
+my $disordered = 1; # 0 for "no disorder", -1 for random response
 
 my ( $plus, $minus );
 if ( $disordered ) {
@@ -40,10 +40,15 @@ if ( $mech->status eq '200' ) {
 
         my $inv = ( split /\s+/, ( split /\|/, $quiz[$question_num] )[0] )[-1];
 
-        $mech->submit_form_ok(
-            { fields => { answer => $inv eq '+' ? $plus : $minus } },
-            "submit form for $inv question $question_num"
-        );
+        my $response;
+        if ( $disordered == -1 ) {
+            $response = { fields => { answer => int rand 10 } };
+        }
+        else {
+            $response = { fields => { answer => $inv eq '+' ? $plus : $minus } };
+        }
+
+        $mech->submit_form_ok( $response, "submit form for $inv question $question_num" );
     }
 
     is $mech->base, "$base/chart", '/chart';
