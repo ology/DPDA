@@ -223,7 +223,7 @@ sub _calc_results {
     my ( $category, $inv, $next );
 
     # Compute the results and discord from the history
-    for my $key (keys %$history) {
+    for my $key ( keys %$history ) {
         # Only consider every other history item
         next unless $key % 2;
 
