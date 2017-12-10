@@ -8,6 +8,8 @@ use warnings;
 use Test::More;
 use Test::WWW::Mechanize;
 
+my $base = 'http://0.0.0.0:5000';
+
 my $disordered = 1; # 0 for "no disorder"
 
 my ( $plus, $minus );
@@ -29,8 +31,6 @@ while ( my $line = <$fh> ) {
 close $fh;
 
 my $mech = Test::WWW::Mechanize->new();
-
-my $base = 'http://0.0.0.0:5000';
 
 $mech->get("$base/question");
 
