@@ -224,12 +224,12 @@ sub _calc_results {
 
     # Compute the results and discord from the history
     for my $key ( keys %$history ) {
-        # Only consider every other history item
+        # Only consider odd items
         next unless $key % 2;
 
+        # Get the previous (even, disorder) question
         my $val = $history->{ $key - 1 };
-
-        # Calculate with the question parameters
+ 
         ( $category, undef, $inv ) = split /\s+/, ( split /\|/, $quiz->[ $key - 1 ] )[0];
 
         $val = _invert_neg( $responses, $inv, $val );
