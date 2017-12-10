@@ -38,8 +38,7 @@ if ( $mech->status eq '200' ) {
     for my $i ( 0 .. @quiz - 1 ) {
         my $question_num = $mech->scrape_text_by_id('question_num');
 
-        my @question = split /\|/, $quiz[$question_num];
-        my $inv      = ( split /\s+/, $question[0] )[2];
+        my $inv = ( split /\s+/, ( split /\|/, $quiz[$question_num] )[0] )[-1];
 
         $mech->submit_form_ok(
             {
