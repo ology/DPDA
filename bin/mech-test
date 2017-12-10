@@ -8,6 +8,8 @@ use warnings;
 use Test::More;
 use Test::WWW::Mechanize;
 
+use IO::All;
+
 my $disordered = -1; # 1 for "disordered", 0 for "no disorder", -1 for random response
 my $base       = 'http://0.0.0.0:5000';
 my $max        = 10;
@@ -21,14 +23,7 @@ else {
 }
 
 # Read-in quiz questions
-my $file = 'public/dpda-questions.txt';
-my @quiz;
-open my $fh, '<', $file or die "Can't read $file: $!";
-while ( my $line = <$fh> ) {
-    chomp $line;
-    push @quiz, $line;
-}
-close $fh;
+my @quiz = io('public/dpda-questions.txt')->slurp;
 
 my $mech = Test::WWW::Mechanize->new();
 
