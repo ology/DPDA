@@ -229,9 +229,7 @@ sub _calc_results {
 
         # Get the previous (even, disorder) question
         my $val = $history->{ $key - 1 };
- 
         ( $category, undef, $inv ) = split /\s+/, ( split /\|/, $quiz->[ $key - 1 ] )[0];
-
         $val = _invert_neg( $responses, $inv, $val );
 
         # Sum the category value
