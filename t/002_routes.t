@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 2;
+use Test::More tests => 4;
 
 use DPDA;
 use Plack::Test;
@@ -18,9 +18,6 @@ ok( $res->is_success, '[GET /overview] successful' );
 
 $res = $test->request( GET '/question' );
 ok( $res->is_success, '[GET /question] successful' );
-
-$res = $test->request( GET '/quiz' );
-ok( $res->is_success, '[GET /quiz] successful' );
 
 $res = $test->request( GET '/chart' );
 ok( $res->is_success, '[GET /chart] successful' );
