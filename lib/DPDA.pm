@@ -174,7 +174,6 @@ Sample results page.
 
 =cut
 
-
 get '/sample' => sub {
     template 'sample' => {};
 };
