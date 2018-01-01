@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 4;
+use Test::More tests => 5;
 
 use DPDA;
 use Plack::Test;
@@ -15,6 +15,9 @@ my $test = Plack::Test->create($app);
 
 my $res = $test->request( GET '/overview' );
 ok( $res->is_success, '[GET /overview] successful' );
+
+$res = $test->request( GET '/sample' );
+ok( $res->is_success, '[GET /sample] successful' );
 
 $res = $test->request( GET '/question' );
 ok( $res->is_success, '[GET /question] successful' );
