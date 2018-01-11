@@ -1,6 +1,7 @@
 [% INCLUDE head.tt %]
 
 Progress: [% progress %] / [% total_questions %]
+<div id="progressbar1"></div>
 
 <div id="question_num" class="hide">[% question_num %]</div>
 
@@ -31,8 +32,11 @@ Progress: [% progress %] / [% total_questions %]
 
 </form>
 
+<script src="[% request.uri_base %]/LineProgressbar/jquery.lineProgressbar.js"></script>
 <script>
 $( document ).ready(function() {
+    $('#progressbar1').LineProgressbar( { percentage: [% progress / total_questions * 100 %] } );
+
     $("input:radio").change(function () {
         $("#submit").prop("disabled", false);
     });
