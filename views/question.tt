@@ -23,7 +23,9 @@ Progress: [% progress %] / [% total_questions %]
     </tr>
     <tr>
 [% FOREACH i IN [ 1 .. 10 ] %]
-        <td align="center"><input type="radio" name="answer" value="[% i %]" /><br>[% i %]</td>
+        <td align="center">
+            <input type="radio" name="answer" value="[% i %]" /><br>[% i %]
+        </td>
 [% END %]
     </tr>
     </table>
