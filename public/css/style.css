@@ -67,3 +67,8 @@ code, .filepath, .app-info {
 .hide {
     display: none;
 }
+
+.padlr {
+    padding-left: 2px;
+    padding-right: 2px;
+}

@@ -1,7 +1,7 @@
 [% INCLUDE head.tt %]
 
 Progress: [% progress %] / [% total_questions %]
-<div id="progressbar1"></div>
+<div id="progressbar1" class="padlr"></div>
 
 <div id="question_num" class="hide">[% question_num %]</div>
 
