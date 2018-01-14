@@ -1,53 +1,53 @@
 [% INCLUDE head.tt %]
 
-<TABLE>
-<TR>
-    <TD VALIGN=TOP><IMG ALIGN="left" SRC="/images/sample-chart.gif"></TD>
-    <TD NOWRAP VALIGN=TOP>
-        <BR>
-        <TABLE>
-        <TR>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/Paranoid_personality_disorder">Paranoid</a>:</TD><TD NOWRAP>4.15 / 2.33</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Schizoid_personality_disorder">Schizoid</a>:</TD><TD NOWRAP>6.00 / 2.47</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Schizotypal_personality_disorder">Schizotypal</a>:</TD><TD NOWRAP>4.59 / 1.52</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Antisocial_personality_disorder">Antisocial</a>:</TD><TD NOWRAP>2.25 / 2.11</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Borderline_personality_disorder">Borderline</a>:</TD><TD NOWRAP>5.75 / 2.04</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Histrionic_personality_disorder">Histrionic</a>:</TD><TD NOWRAP>4.11 / 2.72</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Narcissistic_personality_disorder">Narcissistic</a>:</TD><TD NOWRAP>5.23 / 2.73</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Avoidant_personality_disorder">Avoidant</a>:</TD><TD NOWRAP>7.06 / 1.81</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Dependent_personality_disorder">Dependent</a>:</TD><TD NOWRAP>2.17 / 2.35</TD>
-        </TR>
-        <TR>
-            <TD NOWRAP><a href="https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_personality_disorder">OC</a>:</TD><TD NOWRAP>5.17 / 2.59</TD>
-        </TR>
-        <TR>
-            <td NOWRAP colspan="2">
+<table>
+<tr>
+    <td valign=top><img align="left" src="/images/sample-chart.gif"></td>
+    <td nowrap valign=top>
+        <br>
+        <table>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/paranoid_personality_disorder">Paranoid</a>:</td><td nowrap>4.15 / 2.33</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/schizoid_personality_disorder">Schizoid</a>:</td><td nowrap>6.00 / 2.47</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/schizotypal_personality_disorder">Schizotypal</a>:</td><td nowrap>4.59 / 1.52</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/antisocial_personality_disorder">Antisocial</a>:</td><td nowrap>2.25 / 2.11</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/borderline_personality_disorder">Borderline</a>:</td><td nowrap>5.75 / 2.04</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/histrionic_personality_disorder">Histrionic</a>:</td><td nowrap>4.11 / 2.72</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/narcissistic_personality_disorder">Narcissistic</a>:</td><td nowrap>5.23 / 2.73</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/avoidant_personality_disorder">Avoidant</a>:</td><td nowrap>7.06 / 1.81</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/dependent_personality_disorder">Dependent</a>:</td><td nowrap>2.17 / 2.35</td>
+        </tr>
+        <tr>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/obsessive%e2%80%93compulsive_personality_disorder">OC</a>:</td><td nowrap>5.17 / 2.59</td>
+        </tr>
+        <tr>
+            <td nowrap colspan="2">
                 <br />
-                Red: Score (disorder)
+                red: Score ("disorder")
                 <br />
-                Green: Discord ("dishonesty", "ambivalence")
+                green: Discord ("dishonesty", "ambivalence")
             </td>
-        </TR>
-        </TABLE>
-    </TD>
-</TR>
-</TABLE>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
 
 <p>Link to the question file: <a href="dpda-questions.txt">DPDA Questions</a></p>
 <p>Link to the code: <a href="https://github.com/ology/DPDA">DPDA</a></p>
