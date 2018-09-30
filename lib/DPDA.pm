@@ -87,7 +87,8 @@ post '/quiz' => sub {
     if ( $history || $answer ) {
         @history{ split /,/, $history } = undef;
         # Add the current response to the history
-        $history{ "$question|$answer" } = undef;
+        $history{ "$question|$answer" } = undef
+            if $answer;
         cookie( history => join( ',', keys %history ) );
     }
 
