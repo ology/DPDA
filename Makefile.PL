@@ -11,7 +11,7 @@ WriteMakefile(
     NAME                => 'DPDA',
     AUTHOR              => q{Gene Boggs <gene@ology.net>},
     VERSION_FROM        => 'lib/DPDA.pm',
-    ABSTRACT            => 'YOUR APPLICATION ABSTRACT',
+    ABSTRACT            => 'Dimensional Personality Disorder Assessment',
     ($eumm_version >= 6.3001
       ? ('LICENSE'=> 'perl')
       : ()),
@@ -20,6 +20,7 @@ WriteMakefile(
         'Test::More' => 0,
         'YAML'       => 0,
         'Dancer2'     => 0.205001,
+        'GD::Graph::bars' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'DPDA-*' },
