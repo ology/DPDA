@@ -1,2 +1,2 @@
 # DPDA
-Dimensional Personality Disorder Inventory
+Dimensional Personality Disorder Assessment
