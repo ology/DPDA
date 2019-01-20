@@ -1,7 +1,8 @@
 body {
     margin: 0;
     margin-bottom: 25px;
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #E5E4E2;
     font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
     font-size: 13px;
