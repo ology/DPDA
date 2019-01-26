@@ -41,7 +41,7 @@ schizotypal  01 -|I am generally comfortable socially and feel a need for relati
 schizotypal  01 +|Since early adulthood, I have had beliefs and behaviors that most people find quite odd.
 schizotypal  01 -|Most people seem to accept the majority of my beliefs and habits as faily normal.
 schizotypal  02 +|Though others don't notice it, most of what happens in the world relates directly to me.
-schizotypal  02 -|I think that even though events in the world effect me, they do not always relate to me.
+schizotypal  02 -|I think that even though events in the world affect me, they do not always relate to me.
 schizotypal  03 +|I have noticed that I have special magical powers or insights that others do not possess.
 schizotypal  03 -|I am pretty sure that I do not possess psychic, clarvoyant or magical abilities.
 schizotypal  04 +|Sometimes I see visions or see my body in ways that other people cannot see.
