@@ -31,7 +31,7 @@ Progress: [% progress %] / [% total_questions %]
 [% END %]
     </tr>
     <tr>
-    <td align="center">
+    <td align="center" colspan="10">
     <br>
     <input id="submit" type="submit" name="submit" value="Next Question" disabled="disabled" />
     </td>
