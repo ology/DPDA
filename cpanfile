@@ -1,5 +1,5 @@
 requires "Dancer2" => "0.205001";
-requires "GD::Graph::bars' => "0",
+requires "GD::Graph::bars" => "0",
 
 recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";
