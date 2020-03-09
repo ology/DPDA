@@ -33,6 +33,7 @@ if ( $mech->status eq '200' ) {
     for my $i ( 0 .. @quiz - 1 ) {
         my $question_num = $mech->scrape_text_by_id('question_num');
 
+        # Get the first pipe separated item of the question, then take the last space separated item
         my $inv = ( split /\s+/, ( split /\|/, $quiz[$question_num] )[0] )[-1];
 
         my $answer;
