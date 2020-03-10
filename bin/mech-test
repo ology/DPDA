@@ -10,7 +10,7 @@ use Test::WWW::Mechanize;
 
 use IO::All;
 
-my $disordered = -1; # 1 for "disordered", 0 for "no disorder", -1 for random response
+my $disordered = shift || -1; # 1 for "disordered", 0 for "no disorder", -1 for "inconclusive"
 my $base       = 'http://0.0.0.0:5000';
 my $max        = 10;
 
@@ -38,7 +38,7 @@ if ( $mech->status eq '200' ) {
 
         my $answer;
         if ( $disordered == -1 ) {
-            $answer = 1 + int rand $max;
+            $answer = $minus;
         }
         else {
             $answer = $inv eq '+' ? $plus : $minus;
