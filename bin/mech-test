@@ -14,7 +14,7 @@ my $disordered = shift || -1; # 1 for "disordered", 0 for "no disorder", -1 for 
 my $base       = 'http://0.0.0.0:5000';
 my $max        = 10;
 
-# Flip the values of plus/minus
+# Flip the values of plus/minus given the disordered flag
 my ( $plus, $minus );
 if ( $disordered ) {
     ( $plus, $minus ) = ( $max, 1 );
