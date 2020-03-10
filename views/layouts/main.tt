@@ -22,7 +22,7 @@
 [% content %]
 
 <div id="footer">
-    &#169; Copyright 1999-2018 Timothy W. Butcher and <a href="http://gene.ology.net/">Gene Boggs</a>
+    &#169; Copyright 1999-2020 Timothy W. Butcher and <a href="http://gene.ology.net/">Gene Boggs</a>
 </div>
 
 </body>
