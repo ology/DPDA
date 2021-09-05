@@ -12,7 +12,7 @@ paranoid     05 +|I notice hidden insults and threatening meanings in remarks or
 paranoid     05 -|I rarely see threatening meanings or hidden insults in remarks or events that appear benign.
 paranoid     06 +|Most of the time people don't deserve to be forgiven for insults, slights or injuries against me.
 paranoid     06 -|I find it relatively easy to forgive people for insults, injuries or slights against me.
-paranoid     07 +|I find it easy to spot attacks on my character or reputation that are not appearent to others.
+paranoid     07 +|I find it easy to spot attacks on my character or reputation that are not apparent to others.
 paranoid     07 -|I don't often perceive attacks on my character or reputation that others don't notice as well.
 paranoid     07 +|It is best to react angrily or counterattack when people put me in that situation.
 paranoid     07 -|I am not quick to react angrily or counterattack when put in a negative or confrontational situation.
