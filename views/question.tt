@@ -33,7 +33,11 @@ Progress: [% progress %] / [% total_questions %]
     <tr>
     <td align="center" colspan="10">
     <br>
+[% IF question_num == total_questions %]
+    <input id="submit" type="submit" name="submit" value="Show Results" disabled="disabled" />
+[% ELSE %]
     <input id="submit" type="submit" name="submit" value="Next Question" disabled="disabled" />
+[% END %]
     </td>
     </tr>
     </table>
