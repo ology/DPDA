@@ -39,7 +39,7 @@ if ( $mech->status eq '200' ) {
 
         my $answer;
         if ( $disordered == -1 ) {
-            $answer = $minus;
+            $answer = int rand $max + 1;
         }
         else {
             $answer = $inv eq '+' ? $plus : $minus;
