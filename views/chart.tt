@@ -24,15 +24,15 @@
 [% FOREACH i IN order.nsort %]
         <tr>
             <td nowrap><a href="[% base %][% link.$i %]">[% i.ucfirst %]</a>:</td>
-            <td nowrap>[% average.$i %] / [% discord.$i %]</td>
+            <td nowrap>[% average.$i %] / [% discord.$i %] (difference = [% average.$i - discord.$i %])</td>
         </tr>
 [% END %]
         <tr>
             <td nowrap colspan="2">
                 <br />
-                Red: Score (disorder)
+                Red: Score ("disorder")
                 <br />
-                Green: Discord ("dishonesty", "ambivalence")
+                Green: Discord ("dishonesty", "ambivalence", "confusion")
             </td>
         </tr>
         </table>
