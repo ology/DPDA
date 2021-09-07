@@ -10,7 +10,7 @@ use Test::WWW::Mechanize;
 
 use IO::All;
 
-my $disordered = shift || -1; # 1 for "disordered", 0 for "no disorder", -1 for "inconclusive"
+my $disordered = shift // -1; # 1 for "disordered", 0 for "no disorder", -1 for "inconclusive"
 my $base       = 'http://0.0.0.0:5000';
 my $max        = 10;
 
