@@ -155,10 +155,10 @@ get '/chart' => sub {
     my %prop = $freq->proportional_frequencies;
 
     # Format the values
-    %average = map { $_ => sprintf( '%.2f', $average{$_} ) } keys %average;
-    %discord = map { $_ => sprintf( '%.2f', $discord{$_} ) } keys %discord;
-    %diff    = map { $_ => sprintf( '%.2f', $diff{$_} ) } keys %diff;
-    %prop    = map { $_ => sprintf( '%.2f', $prop{$_} ) } keys %prop;
+    %average = map { $_ => sprintf( '%.3f', $average{$_} ) } keys %average;
+    %discord = map { $_ => sprintf( '%.3f', $discord{$_} ) } keys %discord;
+    %diff    = map { $_ => sprintf( '%.3f', $diff{$_} ) } keys %diff;
+    %prop    = map { $_ => sprintf( '%.3f', $prop{$_} ) } keys %prop;
 
     # Render a results chart as an actual file
     my $chart = _draw_chart( $responses, \%order, \%average, \%discord );
