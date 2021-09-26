@@ -154,12 +154,6 @@ get '/chart' => sub {
     my $freq = Statistics::Frequency->new( \%diff );
     my %prop = $freq->proportional_frequencies;
 
-use Data::Dumper::Compact qw(ddc);
-warn(__PACKAGE__,' ',__LINE__," AVG: ",ddc(\%average));
-warn(__PACKAGE__,' ',__LINE__," DISC: ",ddc(\%discord));
-warn(__PACKAGE__,' ',__LINE__," DIFF: ",ddc(\%diff));
-warn(__PACKAGE__,' ',__LINE__," PROP: ",ddc(\%prop));
-
     # Format the values
     %average = map { $_ => sprintf( '%.2f', $average{$_} ) } keys %average;
     %discord = map { $_ => sprintf( '%.2f', $discord{$_} ) } keys %discord;
