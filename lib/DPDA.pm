@@ -4,6 +4,7 @@ package DPDA;
 
 use Dancer2;
 use GD::Graph::bars;
+use Statistics::Frequency;
 
 our $VERSION = '0.01';
 
@@ -142,11 +143,28 @@ get '/chart' => sub {
 
     # Calculate the average score for each category
     %average = map { $_ => $results{$_} / $number{$_} } keys %results;
-    %average = map { $_ => sprintf( '%.2f', $average{$_} ) } keys %average;
-
     # Calculate the average discord between +/- questions
     %discord = map { $_ => ( $responses * $discord{$_} / ( $number{$_} / 2 ) ) / ( $responses - 1 ) } keys %discord;
+
+    my %diff;
+    for my $cat ( keys %average ) {
+        $diff{$cat} = $average{$cat} - $discord{$cat};
+    }
+
+    my $freq = Statistics::Frequency->new( \%diff );
+    my %prop = $freq->proportional_frequencies;
+
+use Data::Dumper::Compact qw(ddc);
+warn(__PACKAGE__,' ',__LINE__," AVG: ",ddc(\%average));
+warn(__PACKAGE__,' ',__LINE__," DISC: ",ddc(\%discord));
+warn(__PACKAGE__,' ',__LINE__," DIFF: ",ddc(\%diff));
+warn(__PACKAGE__,' ',__LINE__," PROP: ",ddc(\%prop));
+
+    # Format the values
+    %average = map { $_ => sprintf( '%.2f', $average{$_} ) } keys %average;
     %discord = map { $_ => sprintf( '%.2f', $discord{$_} ) } keys %discord;
+    %diff    = map { $_ => sprintf( '%.2f', $diff{$_} ) } keys %diff;
+    %prop    = map { $_ => sprintf( '%.2f', $prop{$_} ) } keys %prop;
 
     # Render a results chart as an actual file
     my $chart = _draw_chart( $responses, \%order, \%average, \%discord );
@@ -155,6 +173,8 @@ get '/chart' => sub {
         order   => \%order,
         average => \%average,
         discord => \%discord,
+        diff    => \%diff,
+        prop    => \%prop,
         chart   => $chart,
     };
 };

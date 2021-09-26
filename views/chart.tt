@@ -24,7 +24,7 @@
 [% FOREACH i IN order.nsort %]
         <tr>
             <td nowrap><a href="[% base %][% link.$i %]">[% i.ucfirst %]</a>:</td>
-            <td nowrap>[% average.$i %] / [% discord.$i %] (difference = [% average.$i - discord.$i %])</td>
+            <td nowrap>[% average.$i %] | [% discord.$i %] (difference: [% diff.$i %]) => [% prop.$i %]</td>
         </tr>
 [% END %]
         <tr>
