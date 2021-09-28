@@ -6,45 +6,46 @@
     <td nowrap valign=top>
         <br/>
         <table>
+
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/paranoid_personality_disorder">Paranoid</a>:</td>
-            <td nowrap>4.15 / 2.33</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Paranoid_personality_disorder">Paranoid</a>:</td>
+            <td nowrap><b>9.2%</b> ( 2.750 - 1.222 = 1.528 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/schizoid_personality_disorder">Schizoid</a>:</td>
-            <td nowrap>6.00 / 2.47</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Schizoid_personality_disorder">Schizoid</a>:</td>
+            <td nowrap><b>35.1%</b> ( 6.556 - 0.741 = 5.815 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/schizotypal_personality_disorder">Schizotypal</a>:</td>
-            <td nowrap>4.59 / 1.52</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Schizotypal_personality_disorder">Schizotypal</a>:</td>
+            <td nowrap><b>5.9%</b> ( 3.000 - 2.020 = 0.980 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/antisocial_personality_disorder">Antisocial</a>:</td>
-            <td nowrap>2.25 / 2.11</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Antisocial_personality_disorder">Antisocial</a>:</td>
+            <td nowrap><b>5%</b> ( 1.500 - 0.667 = 0.833 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/borderline_personality_disorder">Borderline</a>:</td>
-            <td nowrap>5.75 / 2.04</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Borderline_personality_disorder">Borderline</a>:</td>
+            <td nowrap><b>2.1%</b> ( 2.750 - 2.407 = 0.343 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/histrionic_personality_disorder">Histrionic</a>:</td>
-            <td nowrap>4.11 / 2.72</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Histrionic_personality_disorder">Histrionic</a>:</td>
+            <td nowrap><b>0.6%</b> ( 2.944 - 2.840 = 0.105 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/narcissistic_personality_disorder">Narcissistic</a>:</td>
-            <td nowrap>5.23 / 2.73</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Narcissistic_personality_disorder">Narcissistic</a>:</td>
+            <td nowrap><b>9.2%</b> ( 3.045 - 1.515 = 1.530 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/avoidant_personality_disorder">Avoidant</a>:</td>
-            <td nowrap>7.06 / 1.81</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Avoidant_personality_disorder">Avoidant</a>:</td>
+            <td nowrap><b>23.2%</b> ( 7.312 - 3.472 = 3.840 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/dependent_personality_disorder">Dependent</a>:</td>
-            <td nowrap>2.17 / 2.35</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Dependent_personality_disorder">Dependent</a>:</td>
+            <td nowrap><b>6%</b> ( 2.222 - 1.235 = 0.988 )</td>
         </tr>
         <tr>
-            <td nowrap><a href="https://en.wikipedia.org/wiki/obsessive%e2%80%93compulsive_personality_disorder">OC</a>:</td>
-            <td nowrap>5.17 / 2.59</td>
+            <td nowrap><a href="https://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_personality_disorder">OC</a>:</td>
+            <td nowrap><b>3.7%</b> ( 3.333 - 2.716 = 0.617 )</td>
         </tr>
         <tr>
             <td nowrap colspan="2">
