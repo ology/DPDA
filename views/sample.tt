@@ -2,9 +2,9 @@
 
 <table>
 <tr>
-    <td valign=top><img align="left" src="/images/sample-chart.gif"></td>
+    <td><img src="/images/sample-chart.png" /></td>
     <td nowrap valign=top>
-        <br>
+        <br/>
         <table>
         <tr>
             <td nowrap><a href="https://en.wikipedia.org/wiki/paranoid_personality_disorder">Paranoid</a>:</td>
@@ -49,9 +49,9 @@
         <tr>
             <td nowrap colspan="2">
                 <br />
-                red: Score ("disorder")
+                Red: Score ("disorder")
                 <br />
-                green: Discord ("dishonesty", "ambivalence")
+                Green: Discord ("dishonesty", "ambivalence", "confusion")
             </td>
         </tr>
         </table>
