@@ -24,11 +24,12 @@
 [% FOREACH i IN order.nsort %]
         <tr>
             <td nowrap><a href="[% base %][% link.$i %]">[% i.ucfirst %]</a>:</td>
-            <td nowrap><b>[% prop.$i * 100 %]%</b> ( [% average.$i %] - [% discord.$i %] = [% diff.$i %] )</td>
+            <td align="right"><b>[% prop.$i * 100 %]%</b></td>
+            <td nowrap>( [% average.$i %] - [% discord.$i %] = [% diff.$i %] )</td>
         </tr>
 [% END %]
         <tr>
-            <td nowrap colspan="2">
+            <td nowrap colspan="3">
                 <br />
                 Red: Score ("disorder")
                 <br />
