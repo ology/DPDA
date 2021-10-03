@@ -22,7 +22,9 @@
 [% content %]
 
 <div id="footer">
-    &#169; Copyright 1999-2020 Timothy W. Butcher and <a href="http://gene.ology.net/">Gene Boggs</a>
+    &#169; Copyright 1999-2021
+    <a href="https://obits.oregonlive.com/us/obituaries/oregon/name/timothy-butcher-obituary?pid=160646732">Timothy W. Butcher</a>
+    and <a href="http://gene.ology.net/">Gene Boggs</a>
 </div>
 
 </body>
